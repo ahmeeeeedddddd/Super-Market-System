@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2b2d42;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 2rem;
+}
+
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -0.75;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 1.25rem;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav button{
+    cursor: pointer;
+    color: #33354a;
+    border: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+main{
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+    padding: 1rem;
+    padding-bottom: 8rem;
+    color: #33354a;
+}
+
+#hero{
+    height: calc(100vh - 8.75rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#hero h1{
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#hero h3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#hero button{
+    cursor: pointer;
+    color: #33354a;   
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 600; 
+    margin-right: 0.5rem;
+}
+
+#hero button.cta{
+    color: white;
+    background-color: #33354a;
+}
+
+#hero .images{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-text{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   margin-bottom: 2.5rem;
+}
+
+#features-divider {
+    height: 100px;
+    width: 2px;
+    background-color: lightgray;
+}
+
+.features-text h1{
+    text-align: right;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.features-text h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#laptop{
+    max-width: 100%;
+}
+
+#pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+#pricing h1{
+    font-size: 5rem;
+}
+
+#pricing h3{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#pricing-cards{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    
+}
+
+.card-groceries{
+    height: 12rem;
+    background-image: url(groceries.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.card-household{
+    height: 12rem;
+    background-image: url(household.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.card-self_care{
+    height: 12rem;
+    background-image: url(self\ care.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.card-elec{
+    height: 12rem;
+    background-image: url(Household-Appliances-testing-application.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.card-fashion{
+    height: 12rem;
+    background-image: url(fashion.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.plan-name{
+    color: white;
+    background-color: #33354a;
+    width: fit-content;
+    padding: 0.25rem 1.5rem;
+    border-radius: 999px;
+}
+
+.plan-price{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: -0.5rem;
+}
+
+.card-perks{
+    list-style: none;
+}
+
+.card-perks li{
+    font-weight: 600;
+    width: 30ch;
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+
+.card-btn{
+    cursor: pointer;
+    align-self: flex-start;
+    color: #33354a;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1rem 1rem;
+    padding-block: 0.75rem;
+    border-radius: 999px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.login{
+    color: aliceblue;
+}
+
+.register{
+    color: antiquewhite;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #pricing-cards{
+        flex-direction: column;
+    }
+}
